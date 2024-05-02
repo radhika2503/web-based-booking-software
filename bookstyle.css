@@ -1,0 +1,73 @@
+@media only screen and (max-width:760px),(min-width:802px)and (max-device-width:1020) {
+    
+
+table,thead,tbody,th,td,tr{
+    display: block;
+}
+.empty{
+    display: none;
+}
+th{
+    position: absolute;
+    top: -9999px;
+    left:-9999px;
+}
+tr{
+    border:1px solid #ccc; 
+}
+td{
+    border: none;
+    border-bottom:1px solid #eee;
+    position: relative;
+    padding-left:50%;
+}
+td:nth-of-type(1)::before{
+    content:"Sunday";
+}
+td:nth-of-type(2)::before{
+    content:"Monday";
+}
+td:nth-of-type(3)::before{
+    content:"tuesday";
+}
+td:nth-of-type(4)::before{
+    content:"Wednesday";
+}
+td:nth-of-type(5)::before{
+    content:"thursday";
+}
+td:nth-of-type(6)::before{
+    content:"Friday";
+}
+td:nth-of-type(7)::before{
+    content:"Saturday";
+}
+}
+@media only screen and (min-device-width:320px) and (max-device-width:400px) {
+    
+
+body{
+    padding: 0;
+    margin: 0;
+}
+}
+@media only screen and (min-device-width:802px) and (max-device-width:1020px) {
+    body{
+        width: 95px;
+    }
+    
+}
+@media(min-width:641px){
+    table{
+        table-layout: fixed;
+    }
+    td{
+        width:33%;
+    }
+}
+.row{
+    margin-top: 10px;
+}
+.today{
+    background: yellow;
+}
